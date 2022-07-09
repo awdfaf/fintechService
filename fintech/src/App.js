@@ -7,6 +7,7 @@ import AppBar from './components/common/AppBar';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AxiosTest from './pages/AxiosTest';
 import NewsApiPage from './pages/NewsApiPage';
+import AuthPage from './pages/AuthPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/routeTest" element={<Welcome></Welcome>}></Route>
         <Route path="/axiostest" element={<AxiosTest></AxiosTest>}></Route>
         <Route path="/news" element={<NewsApiPage></NewsApiPage>}></Route>
+        <Route path="/" element={<AuthPage></AuthPage>}></Route>
       </Routes>
     </BrowserRouter>
   );
