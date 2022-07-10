@@ -8,6 +8,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AxiosTest from './pages/AxiosTest';
 import NewsApiPage from './pages/NewsApiPage';
 import AuthPage from './pages/AuthPage';
+import AuthResultPage from './pages/AuthResultPage';
+import MainPage from './pages/MainPage';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/axiostest" element={<AxiosTest></AxiosTest>}></Route>
         <Route path="/news" element={<NewsApiPage></NewsApiPage>}></Route>
         <Route path="/" element={<AuthPage></AuthPage>}></Route>
+        <Route path="/AuthResult" element={<AuthResultPage></AuthResultPage>}></Route>
+        <Route path="/main" element={<MainPage></MainPage>}></Route>
       </Routes>
     </BrowserRouter>
   );
