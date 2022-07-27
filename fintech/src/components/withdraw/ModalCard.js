@@ -94,7 +94,7 @@ const ModalCard = ({ bankName, fintechUseNo, tofintechno }) => {
             req_client_fintech_use_num: fintechUseNo,
             req_client_num: "HONGGILDONG1234",
             transfer_purpose: "TR",
-          },
+          },   
         ],
     };
     const option = {
